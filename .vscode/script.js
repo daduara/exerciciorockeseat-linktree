@@ -1,13 +1,13 @@
-function toggleMode(){
-    const html = document.documentElement
+function toggleMode() {
+    const html = document.documentElement;
+    html.classList.toggle('light');
 
-    html.classList.toggle('light')
+    const img = document.querySelector("#profile img");
 
-    const img = document.querySelector("#profile img")
-
-    if(html.classList.contains('light')) {
-        img.setAttribute("scr", "./Assets/avatar1.png")
+    if (html.classList.contains('light')) {
+        img.setAttribute("src", "./Assets/avatar1.png");
     } else {
-        img.setAttribute("scr", "./Assets/avatar2.png")
-    }   
+        img.setAttribute("src", "./Assets/avatar2.png");
+    }
+    
 }
